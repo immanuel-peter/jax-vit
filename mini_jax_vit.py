@@ -239,7 +239,7 @@ def main():
     
     steps = 0
 
-    for epoch in range(1, 15):
+    for epoch in range(1, 15): # increasing num epochs improves accuracy
         t0 = time.time()
         train_losses, train_accs = [], []
         n_train_batches = (n_train + bs - 1) // bs
