@@ -1,1 +1,15 @@
-# TODO: Add requirements here
+# Apple GPU + JAX stack (macOS/arm64 only)
+jax==0.4.34
+jaxlib==0.4.34
+jax-metal==0.1.1; platform_system == "Darwin" and platform_machine == "arm64"
+
+# Model stack
+flax==0.8.4
+optax>=0.2.2,<0.3
+einops>=0.7,<0.8
+
+# CIFAR-10
+keras>=3.0,<4
+
+# Other
+tqdm>=4.67.1,<5
